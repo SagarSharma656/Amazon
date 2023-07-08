@@ -1,0 +1,510 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 221, 221);
+}
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 110px;
+    height: 50px;
+    background-image: url(images/amazon_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.address{
+    padding: 5px;
+}
+.address>p{
+    color: #CCCCCC;
+    font-size: 0.85rem;
+    padding-left: 17px;
+}
+
+.loc-logo{
+    display: flex;
+    text-align: center;
+}
+.loc-logo>i{
+    color: white;
+    font-size: 20px;
+}
+.loc-logo>p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.search{
+    height: 40px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.nav-select{
+    height: 38px;
+    width: 8%;
+    text-align: center;
+    border: none;
+    color: #0f1111;
+    background-color: rgb(238, 238, 238);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.search input{
+    width: 85%;
+    height: 38px;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 7%;
+    height: 38px;
+    background-color: #E7AA2B;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon i{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #0f1111;
+}
+
+
+.nav-language{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+}
+.nav-language>img{
+    width: 18px;
+    height: 14px;
+    margin: 10px 2px;
+}
+.nav-language>p{
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.nav-language>i{
+    color: #CCCCCC;
+    font-size: .5rem;
+}
+
+
+.signin{
+    padding: 8px 5px;
+    margin: 2px 2px;
+}
+
+.signin :first-child{
+    color: #CCCCCC;
+    font-size: .75rem;
+}
+.signin :nth-child(2){
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.signin :nth-child(2) span{
+    color: #CCCCCC;
+}
+
+
+
+.returnOrder{
+    padding: 8px 5px;
+    margin: 2px 2px;
+}
+
+
+.returnOrder :first-child{
+    font-size: .75rem;
+    color: #CCCCCC;
+}
+.returnOrder :nth-child(2){
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+
+.cart{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 5px;
+    margin: 2px 2px;
+    display: flex;
+}
+.cart i{
+    font-size: 2rem;
+}
+.cart p{
+    margin-top: 18px;
+}
+
+
+
+.panel{
+    background-color: #223036;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.panel .left{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 5px 5px;
+}
+.panel .left a{
+    text-decoration: none;
+    color: white;
+}
+.panel .left i{
+    font-size: 1.5rem;
+}
+
+
+.panel .center{
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.panel .center a{
+    font-size: 0.85rem;
+    color: white;
+    text-decoration: none;
+    padding: 8px 8px;
+}
+
+.panel .right{
+    width: 19%;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 5px;
+}
+
+
+.home{
+    width: 100%;
+    height: 60vh;
+}
+.home::before{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.message{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    color: #454747;
+    font-size: .85rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+
+.box-container{
+    width: 100%;
+}
+.row1,.row2,.row3{
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.box{
+    background-color: white;
+    display: block;
+    height: 65vh;
+    width: 32.5%;
+    padding: 13px 13px;
+}
+.box h2{
+    padding: 8px 5px;
+    font-size: 1.5rem;
+    color: #0f1111;
+    font-weight: 600;
+}
+.box img{
+    height: 70%;
+} 
+
+
+
+.mini-container img{
+    width: 80px !important;
+    height: 110px  !important;
+}
+
+
+
+
+
+.mini-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-container p{
+    font-size: .8rem;
+    font-weight: 300;
+    color: #0f1111;
+}
+
+.firstROW{
+    margin: auto auto;
+}
+.secondROW{
+    margin: auto auto;
+}
+
+
+
+
+
+
+.signin-container{
+    width: 100%;
+    height: 35vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.signin-container>div{
+    width: 98%;
+    margin: auto;
+    height: 20vh;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signin-container>div :first-child{
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+
+.signin-container>div button{
+    width: 20%;
+    padding: 5px 2px;
+    margin: 5px 5px;
+    background-color: #FFC73B;
+    border: 1px solid #ffbf00;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+}
+
+.signin-container>div :nth-child(3){
+    font-size: 0.7rem;
+    color: #000000;
+    font-weight: 500;
+}
+.signin-container>div :nth-child(3) span{
+    color: #007185;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+
+footer{
+    padding: 0;
+    margin: 0;
+}
+
+
+footer .backtotop{
+    width: 100%;
+    background-color: #37475A;
+    margin: 0;
+    text-align: center;
+    font-size: 0.55rem;
+    color: white;
+    padding: 15px 0;
+}
+
+
+.footer-links{
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2.5;
+    padding: 50px;
+}
+.footer-links h2{
+    font-size: 1.1rem;
+    color: white;
+}
+.footer-links a{
+    color: #CCCCCC;
+    text-align: left;
+    text-decoration: none;
+    font-size: .85rem;
+    display: block;
+}
+hr{
+    border: .5px solid lightgray;
+}
+.footer-logo-container{
+    width: 100%;
+    background-color: #232F3E;
+    border-top: 0.5px solid rgb(77, 77, 77);
+    
+}
+
+.footer-logos{
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.footer-logos>img{
+    height: 70px;
+    padding: 2px 2px;
+    margin-left: 50px;
+    margin-right: 120px;
+}
+.footer-lang-select{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #CCCCCC;
+    font-size: 1rem;
+    margin: 10px;
+}
+.footer-lang-select select{
+    background-color: transparent;
+    color: #CCCCCC;
+    border:none;
+    outline: none;
+}
+
+.currency{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #CCCCCC;
+    font-size: .85rem;
+    margin: 10px;
+}
+.currency span{
+    color: white;
+}
+
+.country{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #CCCCCC;
+    font-size: .85rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px; 
+}
+.country img{
+    width: 30px;
+    padding-right: 5px;
+}
+
+
+
+.copyright-container{
+    background-color: #131A22;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 0.75rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copyright-container a{
+    color: #CCCCCC;
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 0.75rem;
+}
+
+
+.seemore{
+    color: #007185;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+
+
+
+
+.border{
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+.border:hover{
+    border-color: white;
+}
